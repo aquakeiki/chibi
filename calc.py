@@ -1,3 +1,4 @@
+
 def calc(s):
     return int(s)
 
