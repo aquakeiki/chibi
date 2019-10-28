@@ -35,7 +35,9 @@ class Q(object):
         return Q(a*d/b*c, b*d)
 
 q1 = Q(1,2)
-q2 = Q(1,3)
+q1.a => 1
+q1.b => 2
+
 print(q1.add(q2))
 print(q1.sub(q2))
 print(q1.mul(q2))

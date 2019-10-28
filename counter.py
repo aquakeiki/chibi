@@ -7,6 +7,7 @@ class Counter(object):
         self.cnt += 1
 
     def doublecount(self):
+        #2回カウントする
         self.cnt += 2
 
     def reset(self):
@@ -16,6 +17,7 @@ class Counter(object):
         print(self.cnt)
         
     def __repr__(self):
+        #文字列返すと表示される
         return str(self.cnt)
 
 c = Counter()
