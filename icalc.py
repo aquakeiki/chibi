@@ -1,5 +1,6 @@
 import pegpy
-peg = pegpy.grammar('''
+peg = pegpy.grammar('chibi.tpeg')
+'''
 Expression = Product (^{ '+' Product #Add })*
 Product = Value (^{ '*' Value #Mul })*
 Value = { [0-9]+ #Int }
