@@ -52,6 +52,24 @@ class Mod(Binary):
     __slots__ = ['left', 'right']
     def eval(self, env: dict):
         return self.left.eval(env) % self.right.eval(env)
+class Eq(Binary): # Left == right
+    __slots__ = ['left', 'right']
+    def eval(self, env: dict):  #cond ? x : y
+        return 1 if self.left.eval(env) != self.right.eval(env) else 0
+class Eq(Binary): # Left == right
+    __slots__ = ['left', 'right']
+    def eval(self, env: dict):  #cond ? x : y
+        return 1 if self.left.eval(env) == self.right.eval(env) else 0
+class Ne(Binary): # Left != right
+    __slots__ = ['left', 'right']
+    def eval(self, env: dict):  #cond ? x : y
+        return 1 if self.left.eval(env) != self.right.eval(env) else 0
+class Lt(Binary): # Left != right
+    __slots__ = ['left', 'right']
+    def eval(self, env: dict):  #cond ? x : y
+        return 1 if self.left.eval(env) < self.right.eval(env) else 0
+
+class
 class Var(Expr):
     __slots__ = ['name']
     def __init__(self, name):
