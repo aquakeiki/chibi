@@ -209,7 +209,7 @@ def remarkRanking():
 
 # 定数群
 KATAKANA = "アイウエオカガキギクグケゲコゴサザシジスズセゼソゾタダチヂツヅテデトドナニヌネノハバパヒビピフブプヘベペホボポマミムメモヤユヨラリルレロワヲンヴ"
-COUNTRYDATA = json.load(open("C:/Users/aqua_/kadai1/libs/country_data.json","r",encoding="utf-8"))
+COUNTRYDATA = json.load(open("C:/Users/aqua_/shiritori-country/libs/country_data.json","r",encoding="utf-8"))
 COUNTRYNAMELIST = getkunimeilist()
 
 # 変数群
